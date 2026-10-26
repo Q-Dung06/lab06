@@ -1,0 +1,28 @@
+namespace Lab06.GUI;
+
+static class Program
+{
+    /// <summary>
+    ///  The main entry point for the application.
+    /// </summary>
+    [STAThread]
+    static void Main(string[] args)
+    {
+        // To customize application configuration such as set high DPI settings or default font,
+        // see https://aka.ms/applicationconfiguration.
+        ApplicationConfiguration.Initialize();
+        if (args.Length > 0 && args[0] == "--capture")
+        {
+            var form = new frmMain();
+            form.Shown += (_, _) =>
+            {
+                Application.DoEvents();
+                System.Threading.Thread.Sleep(700);
+                form.CaptureTabs();
+                form.Close();
+            };
+            Application.Run(form);
+        }
+        else Application.Run(new frmMain());
+    }    
+}

@@ -3,6 +3,7 @@ Học phần: Lập trình .NET (IT3212)
 
 MỞ VÀ CHẠY
 - Mở Lab06_ThreeLayerMemory.sln bằng Visual Studio 2022 và nhấn F5.
+- Nếu Visual Studio đang chọn Lab06.BUS hoặc Lab06.DAL, nhấp phải Lab06.GUI trong Solution Explorer > Set as Startup Project, rồi nhấn F5.
 - Hoặc chạy: dotnet run --project Lab06.GUI\Lab06.GUI.csproj
 - Tệp CSV sinh viên được tạo và lưu tại Lab06.GUI\bin\Debug\net10.0-windows\Data\SinhVien.csv.
 

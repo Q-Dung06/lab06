@@ -1,5 +1,5 @@
 <Solution>
+  <Project Path="Lab06.GUI/Lab06.GUI.csproj" />
   <Project Path="Lab06.BUS/Lab06.BUS.csproj" />
   <Project Path="Lab06.DAL/Lab06.DAL.csproj" />
-  <Project Path="Lab06.GUI/Lab06.GUI.csproj" />
 </Solution>
